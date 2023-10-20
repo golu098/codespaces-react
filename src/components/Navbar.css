@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 14px 0;
+    flex-wrap: wrap;
+   }
+   
+   .navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+   }
+   
+   .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+   }
+   
+   .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+   }
+   
+   @media screen and (max-width: 600px) {
+    .navbar a {
+       flex: 100%;
+       text-align: center;
+    }
+   }
+   /* Toggle button styles */
+.nav-toggle {
+    display: none; /* Hide by default for larger screens */
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      flex: 100%;
+      text-align: center;
+    }
+  
+    /* Show the toggle button and hide the links by default */
+    .nav-toggle {
+      display: block;
+    }
+  
+    /* Style for the active (open) links */
+    .navbar.active {
+      display: flex;
+    }
+  }
