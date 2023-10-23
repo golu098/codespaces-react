@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+// import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
 import "./home.css"; // Make sure to import your CSS file
 import Footer from "../Footer/Footer";
 
 function Home() {
   const [text, setText] = useState("");
-  const phrases = ["Welcome to the new Tech Era"];
+  const phrases = useMemo(() => ["Welcome", "to the new Tech Era"], []);
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
 
@@ -28,7 +31,9 @@ function Home() {
     return () => {
       clearInterval(typingInterval);
     };
-  }, [phraseIndex, currentCharIndex]);
+  // }, [phraseIndex, currentCharIndex]);
+}, [phraseIndex, currentCharIndex, phrases]); // Include 'phrases' as a dependency
+
 
   return (
     <>
@@ -45,7 +50,7 @@ function Home() {
             <Col md={6}>
               <img
                 src="https://media.tenor.com/koUnzaLbySoAAAAd/wild-west-saloon.gif"
-                alt="Image"
+                alt="pic"
                 className="w-100"
               />
             </Col>

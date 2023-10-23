@@ -1,137 +1,152 @@
+/* Header Style */
 header2 {
-    background-color: black;
-  }
-  
-  .container {
-    width: 1200px !important;
-    padding: 0 !important;
-    margin-right: auto;
-    margin-left: auto;
-  
-    @media screen and (min-width: 992px) and (max-width: 1439px) {
-      max-width: 1279px !important;
-      padding: 0 !important;
-      margin: 0 80px !important;
-      width: auto !important;
-    }
-  
-    @media screen and (max-width: 991px) {
-      max-width: 959px !important;
-      margin: 0 16px !important;
-      padding: 0 !important;
-      width: auto !important;
-    }
-  }
-  
-  .gradient-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    padding: 30px;
-    @media screen and (max-width: 991px) {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .container-title {
-    text-align: center;
-    padding: 0 !important;
-    margin-bottom: 40px;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 60px;
-  }
-  
-  .card {
-    max-width: 550px;
-    border: 0;
-    width: 100%;
-    margin-inline: auto;
-  }
-  
-  .container-card {
-    position: relative;
-    border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
-    background-clip: padding-box;
-    border-radius: 45px;
-    padding: 40px;
-    img {
-      margin-bottom: 32px;
-    }
-  }
-  
-  .bg-green-box,
-  .bg-white-box,
-  .bg-yellow-box,
-  .bg-blue-box {
-    position: relative;
-  }
-  
-  .bg-green-box::after,
-  .bg-white-box::after,
-  .bg-yellow-box::after,
-  .bg-blue-box::after {
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    content: "";
-    z-index: -1;
-    border-radius: 45px;
-  }
-  
-  .bg-green-box::after {
-    background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
-  }
-  
-  .bg-white-box::after {
-    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
-  }
-  
-  .bg-yellow-box::after {
-    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
-  }
-  
-  .bg-blue-box::after {
-    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
-  }
-  
-  .card-title {
-    font-weight: 600;
-    color: white;
-    letter-spacing: -0.02em;
-    line-height: 40px;
-    font-style: normal;
-    font-size: 28px;
-    padding-bottom: 8px;
-  }
-  
-  .card-description {
-    font-weight: 600;
-    line-height: 32px;
-    color: hsla(0, 0%, 100%, 0.5);
-    font-size: 16px;
-    max-width: 470px;
-  }
-  
+  background-color: black;
+}
 
-  /* function part css */
-  @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+/* Container Styles */
+.container {
+  width: 1200px !important;
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .container {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+}
+
+/* Gradient Cards Styles */
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .gradient-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Container Title Styles */
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+/* Card Styles */
+.card {
+  max-width: 550px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* Container Card Styles */
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+}
+
+.container-card img {
+  margin-bottom: 32px;
+}
+
+/* Background Box Styles */
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
+/* Card Title and Description Styles */
+.card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+.card-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  max-width: 470px;
+}
+
+/* Additional CSS Imports (Font Awesome and Google Fonts) */
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 
- *,
+/* Global Styles */
+*,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 body {
-    
   --color: rgba(30, 30, 30);
   --bgColor: rgba(245, 245, 245);
   min-height: 100vh;
@@ -139,34 +154,45 @@ body {
   align-content: center;
   gap: 2rem;
   box-sizing: border-box;
-
   padding: 2rem;
   font-family: "Exo 2", sans-serif;
   color: var(--color);
   background: var(--bgColor);
 }
 
-h1 { text-align: center }
+h1 {
+  text-align: center;
+}
 
 ol {
   width: min(60rem, 90%);
   margin-inline: auto;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-
   list-style: none;
   counter-reset: stepnr;
 }
 
-li:nth-child(6n + 1) { --accent-color: #b8df4e }
-li:nth-child(6n + 2) { --accent-color: #4cbccb }
-li:nth-child(6n + 3) { --accent-color: #7197d3 }
-li:nth-child(6n + 4) { --accent-color: #ae78cb }
-li:nth-child(6n + 5) { --accent-color: #7dc7a4 }
-li:nth-child(6n + 6) { --accent-color: #f078c2 }
+li:nth-child(6n + 1) {
+  --accent-color: #b8df4e;
+}
+li:nth-child(6n + 2) {
+  --accent-color: #4cbccb;
+}
+li:nth-child(6n + 3) {
+  --accent-color: #7197d3;
+}
+li:nth-child(6n + 4) {
+  --accent-color: #ae78cb;
+}
+li:nth-child(6n + 5) {
+  --accent-color: #7dc7a4;
+}
+li:nth-child(6n + 6) {
+  --accent-color: #f078c2;
+}
 
 ol li {
   counter-increment: stepnr;
@@ -179,6 +205,7 @@ ol li {
   padding-left: calc(var(--borderS) + 2rem);
   position: relative;
 }
+
 ol li::before,
 ol li::after {
   inset: 0;
@@ -187,6 +214,7 @@ ol li::after {
   border: var(--borderS) solid var(--bgColor);
   line-height: 1.1;
 }
+
 ol li::before {
   content: counter(stepnr);
   color: var(--accent-color);
@@ -201,10 +229,31 @@ ol li::after {
   filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
 }
 
-ol li > * { width: 7.5rem }
-ol li .icon { font-size: 2rem; color: var(--accent-color); text-align: center }
-ol li .title { font-size: 2rem; font-weight: 500 }
-ol li .descr { font-size: 0.8rem; font-weight: 300 }
+ol li > * {
+  width: 7.5rem;
+}
 
-.credits { margin-top: 2rem; text-align: right }
-.credits a { color: var(--color) }
+ol li .icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+ol li .title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+ol li .descr {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.credits {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.credits a {
+  color: var(--color);
+}
